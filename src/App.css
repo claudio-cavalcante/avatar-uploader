@@ -1,38 +1,136 @@
-.App {
+.avatar-upload{
+  width: 553px;
+  height: 177px;
+  background: #F2F5F8;
+  display: flex;
+  borderRadius: 8px;
+  position: relative;
+  userSelect: none;
+}
+
+.display-flex{
+  display: flex !important;
+}
+
+.btn-close{
+  position: absolute;  
+  right: 29px;
+  top: 36px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.btn-save {
+  position: absolute;
+  bottom: 27px;
+  right: 100px;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  line-height: 180%;
+  color: #ffffff;
+  background: #3D485F;
+  border-radius: 16px;
+  width: 109px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.crop-container{
+  align-self: center;
+  margin-left: 32px;;
+  width: 276px;
+}
+
+.crop-title{
+  font-size: 16px;
+  line-height: 180%;
+  color: #677489;
+}
+
+.upload-error {
+  display: flex !important;
+}
+
+.upload-error-content {
+    align-self: center;
+    margin-left: 32px;
+}
+
+.upload-error-message {
+   font-family: 'Inter';
+   font-weight: 400;
+   line-height: 180%;
+   color: #C64D32;
+   margin-bottom: 2px;
+}
+
+.upload-error-link{
+   font-family: 'Inter';
+   font-weight: 500;
+   line-height: 180%;
+   text-decoration: underline;
+   color: black;
+   border: none;
+   background: none;
+   display: block;
+   padding: 0;
+   font-size: 16px;
+   outline: none;
+   cursor: pointer;
+}
+
+.upload-edition__container{
+  display: flex;
+  width: 100%;
+}
+
+.uploaded-image__container {
+  position: relative;
+  width: 113px;
+  height: 113px;
+  background: #C3CBD5;
+  border-radius: 72.5px;  
+  align-self: center;
+  margin-left: 32px;  
+  overflow: hidden;
+}
+
+.uploaded-image__container .uploaded-avatar{
+  transform-origin: left top;
+  height: inherit;
+}
+
+.attention-icon {
+  position: absolute;
+  top: 47px;
+  left: 47px;
+}
+
+.drop-area{
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+  line-height: 180%;
+  font-size: 14px;
+}
+
+.file-upload{
+  display: none;
+}
+
+.drop-area-organization{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drop-area-icon__wrapper{
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drop-area-icon{
+  position: absolute;
+  top: 1px;
+  left: -27px;
 }
